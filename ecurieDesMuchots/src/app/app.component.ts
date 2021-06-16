@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
@@ -7,7 +6,12 @@ import { Title } from '@angular/platform-browser';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  
+  public slides = [
+    { src: "assets/img/carousel1.jpg" },
+    { src: "assets/img/carousel2.jpg" },
+    { src: "assets/img/carousel3.jpg" },
+    { src: "assets/img/carousel4.jpeg" }
+  ];
 
 
 
