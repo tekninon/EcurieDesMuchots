@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navigation-bar.component.css']
 })
 export class NavigationBarComponent implements OnInit {
+  cheminLogo:any = "../assets/img/logo.jpg";
 
   constructor() { }
 
