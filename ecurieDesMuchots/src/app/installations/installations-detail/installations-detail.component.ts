@@ -9,7 +9,7 @@ export class InstallationsDetailComponent implements OnInit {
 
   @Input() image;
   @Input() title; 
-  //@Input() description; 
+  @Input() description; 
 
   constructor() { }
 
