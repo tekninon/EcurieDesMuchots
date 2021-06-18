@@ -20,12 +20,7 @@ import { trigger, transition, style, animate } from "@angular/animations";
 })
 export class CarouselComponent implements OnInit {
 
-  public slides = [
-    { src: "assets/img/carousel1.jpg" },
-    { src: "assets/img/carousel2.jpg" },
-    { src: "assets/img/carousel3.jpg" },
-    { src: "assets/img/carousel4.jpeg" }
-  ];
+  @Input() slides; 
 
   currentSlide = 0; 
 

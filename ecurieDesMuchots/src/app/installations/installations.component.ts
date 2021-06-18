@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./installations.component.css']
 })
 export class InstallationsComponent implements OnInit {
+  cheminCarriere:any = "../assets/img/carriere1.jpeg";
 
   constructor() { }
 
