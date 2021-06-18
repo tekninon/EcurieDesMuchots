@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { CarouselComponent } from './carousel/carousel.component';
+import { AccueilComponent } from './accueil/accueil.component';
 import { InstallationsComponent } from './installations/installations.component';
 
 
 const routes: Routes = [
   {
     path: '',
-    component: CarouselComponent
+    component: AccueilComponent
   },
   {
     path: 'installations',

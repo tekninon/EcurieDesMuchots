@@ -8,7 +8,8 @@ import { AppComponent } from './app.component';
 import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
 
 import { InstallationsComponent } from './installations/installations.component';
-import { CarouselComponent } from './carousel/carousel.component';
+import { CarouselComponent } from './accueil/carousel/carousel.component';
+import { AccueilComponent } from './accueil/accueil.component';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { CarouselComponent } from './carousel/carousel.component';
     NavigationBarComponent,
     CarouselComponent,
     InstallationsComponent,
+    AccueilComponent,
   ],
   imports: [
     BrowserModule,
