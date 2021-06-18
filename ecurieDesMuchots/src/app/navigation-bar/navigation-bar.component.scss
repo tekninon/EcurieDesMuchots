@@ -43,9 +43,10 @@ a {
 
 .fullwidth {
     grid-area: menu;
+    margin-top: 5px;
     @media (max-width: $tablette) {
         margin: auto;
-        margin-top: 40px;
+        margin-top: 20px;
     }
     @media (max-width: $mobile) {
         margin: 0;
@@ -54,8 +55,8 @@ a {
         grid-template-columns: 50% 50%;
         text-align: center;
         li {
-            margin-top: 10px;
             font-size: 11pt;
+            text-align: center;
         }
     }
     @media (max-width: $mobileMini) {
@@ -64,14 +65,31 @@ a {
 }
 
 ul li a {
+    display: inline-block;
     padding: 1.6rem;
+    @media (max-width: $mobile) {
+        padding: 0.6rem;
+    }
+    @media (max-width: $mobileMini) {
+        padding: 0.2rem;
+    }
 }
 
 ul li a:hover {
     color: $greenColor;
     font-weight: bold;
-    border-bottom: 2px solid $greenColor;
-    @media (max-width: $tablette) {
-        border-bottom: none;
-    }
+}
+
+ul li a::after {
+    content: '';
+    margin-top: 5px;
+    display: block;
+    width: 0;
+    height: 3px;
+    background: $greenColor;
+    transition: width .3s;
+}
+
+ul li a:hover::after {
+    width: 100%;
 }
