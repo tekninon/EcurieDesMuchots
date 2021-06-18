@@ -71,4 +71,7 @@ ul li a:hover {
     color: $greenColor;
     font-weight: bold;
     border-bottom: 2px solid $greenColor;
+    @media (max-width: $tablette) {
+        border-bottom: none;
+    }
 }
