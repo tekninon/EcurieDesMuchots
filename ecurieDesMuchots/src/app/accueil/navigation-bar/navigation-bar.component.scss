@@ -14,11 +14,7 @@ a {
     justify-content: space-between;
     align-items: center;
     overflow: hidden;
-    padding: 10px;
-    @media (min-width: 600px) {
-        padding: 20px;
-        justify-content: space-between;
-    }
+    padding: 20px;
 }
 
 .container {
