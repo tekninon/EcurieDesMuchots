@@ -11,6 +11,7 @@ import { CarouselComponent } from './accueil/carousel/carousel.component';
 import { AccueilComponent } from './accueil/accueil.component';
 import { InstallationsDetailComponent } from './installations/installations-detail/installations-detail.component';
 import { InstallationsListComponent } from './installations/installations-list/installations-list.component';
+import { PrestationsComponent } from './prestations/prestations.component';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import { InstallationsListComponent } from './installations/installations-list/i
     InstallationsListComponent,
     AccueilComponent,
     InstallationsDetailComponent,
+    PrestationsComponent,
   ],
   imports: [
     BrowserModule,
