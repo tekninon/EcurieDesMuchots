@@ -5,15 +5,20 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
-import { CarouselComponent } from './carousel/carousel.component';
+import { NavigationBarComponent } from './accueil/navigation-bar/navigation-bar.component';
+
+import { InstallationsComponent } from './installations/installations.component';
+import { AccueilComponent } from './accueil/accueil.component';
+import { CarouselComponent } from './accueil/carousel/carousel.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationBarComponent,
-    CarouselComponent
+    CarouselComponent,
+    InstallationsComponent,
+    AccueilComponent
   ],
   imports: [
     BrowserModule,
