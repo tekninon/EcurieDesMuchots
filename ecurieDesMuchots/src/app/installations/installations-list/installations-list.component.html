@@ -1,0 +1,8 @@
+<h2>Installations</h2>
+<ul class="heroes">
+    <li *ngFor="let installation of installations$ | async">
+        <a [routerLink]="['/installation', installation.img]">
+            <span class="badge">{{ installation.title }}</span>
+        </a>
+    </li>
+</ul>

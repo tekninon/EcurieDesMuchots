@@ -7,9 +7,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
 
-import { InstallationsComponent } from './installations/installations.component';
 import { CarouselComponent } from './accueil/carousel/carousel.component';
 import { AccueilComponent } from './accueil/accueil.component';
+import { InstallationsDetailComponent } from './installations/installations-detail/installations-detail.component';
+import { InstallationsListComponent } from './installations/installations-list/installations-list.component';
 
 
 @NgModule({
@@ -17,8 +18,9 @@ import { AccueilComponent } from './accueil/accueil.component';
     AppComponent,
     NavigationBarComponent,
     CarouselComponent,
-    InstallationsComponent,
+    InstallationsListComponent,
     AccueilComponent,
+    InstallationsDetailComponent,
   ],
   imports: [
     BrowserModule,
