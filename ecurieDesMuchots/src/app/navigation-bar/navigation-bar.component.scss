@@ -50,6 +50,7 @@ a {
         margin: auto;
         margin-top: 20px;
         font-size: 12pt;
+        padding-inline-start: 0;
     }
     @media screen and (max-width: $mobileMini) {
         display: grid;
