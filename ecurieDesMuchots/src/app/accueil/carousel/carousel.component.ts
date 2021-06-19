@@ -15,7 +15,8 @@ import { trigger, transition, style, animate } from "@angular/animations";
       transition('* => void', [
         animate('300ms', style({ opacity: 0 }))
       ])
-    ])
+    ]), 
+    
   ]
 })
 export class CarouselComponent implements OnInit {
@@ -39,7 +40,14 @@ export class CarouselComponent implements OnInit {
     console.log("next clicked, new current slide is : ", this.currentSlide); 
   }
 
+  repeat(){
+    setTimeout(() => {
+      this.onNextClick();
+      this.repeat();
+    }, 8000);
+  }
   ngOnInit(): void {
+    this.repeat();
   }
 
 }
