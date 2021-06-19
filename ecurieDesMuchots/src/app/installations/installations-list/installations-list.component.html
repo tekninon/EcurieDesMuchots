@@ -1,6 +1,6 @@
 <h2>Installations</h2>
 <ul class="installations">
-    <li *ngFor="let installation of installations$ | async ">
-        <app-installations-detail [image]="installation.img" [title]="installation.title" [description]="installation.description"></app-installations-detail>
+    <li *ngFor="let installation of installations$ | async  ; let i=index">
+        <app-installations-detail [image]="installation.img" [title]="installation.title" [description]="installation.description" [leftRight]="i"></app-installations-detail>
     </li>
 </ul>
