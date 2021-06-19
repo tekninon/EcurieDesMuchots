@@ -45,6 +45,7 @@ a {
 
 .fullwidth {
     grid-area: menu;
+    padding-inline-start: 0;
     margin-top: 5px;
     font-size: 14pt;
     @media screen and (max-width: $tablette) {
