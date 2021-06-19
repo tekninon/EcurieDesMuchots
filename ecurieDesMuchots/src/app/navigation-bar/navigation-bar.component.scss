@@ -1,7 +1,7 @@
 $greenColor: #97C108;
 $tablette: 960px;
 $mobile: 625px;
-$mobileMini: 400px;
+$mobileMini: 450px;
 ul {
     list-style: none;
     display: flex;
@@ -17,11 +17,10 @@ a {
     justify-content: space-between;
     align-items: center;
     overflow: hidden;
-    padding: 20px;
-    padding-left: 40px;
+    padding: 20px 50px;
     @media screen and (max-width: $tablette) {
         display: block;
-        padding-left: 20px;
+        padding: 20px;
     }
 }
 
@@ -45,7 +44,6 @@ a {
 
 .fullwidth {
     grid-area: menu;
-    padding-inline-start: 0;
     margin-top: 5px;
     font-size: 14pt;
     @media screen and (max-width: $tablette) {
@@ -53,19 +51,14 @@ a {
         margin-top: 20px;
         font-size: 12pt;
     }
-    @media screen and (max-width: $mobile) {
-        margin: 0;
-        margin-top: 20px;
+    @media screen and (max-width: $mobileMini) {
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 1fr;
         text-align: center;
         li {
             font-size: 11pt;
             text-align: center;
         }
-    }
-    @media screen and (max-width: $mobileMini) {
-        grid-template-columns: 1fr;
     }
 }
 
